@@ -2,7 +2,10 @@ class Dispatcher:
     cmds = {}
 
     def reg(self, cmd, fn):
-        pass
+        self.cmds[cmd] = fn
 
     def run(self):
         pass
+
+    def defaultfn(self):
+        print("Unknown Command")
